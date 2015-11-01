@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600' rel='stylesheet' type='text/css'>
+  <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    
+      <div id="pa-form-container">
+        <div class="screen-container">
+          <div class="row">
+            <div class="pa-header">
+              <h1>Are You Pre-Approved?</h1>
+            </div>
+            <div class="pa-form-header">
+              <h3>Find out by completing this simple form:</h3>
+            </div>
+            <div class="pa-form">
+                <form>
+                  <p>Name:</p>
+                  <input type="text" name="name" placeholder="Full Legal Name">
+                  <p>Birthdate: </p>
+                  <input type="text" name="birthdate" placeholder="MM/DD/YYYY">
+                  <p>Social Security Number: </p>
+                  <input type="text" name="ss" placeholder="XXXXXXXXX">
+                  <div class="button-container">
+                    <button id="pa-form-submit" type="submit" value="submit" disabled>Submit</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="loading-container">
+        <div class="screen-container">
+          <div class="row">
+            <div class="pa-header">
+              <h1>Are You Pre-Approved?</h1>
+            </div>
+            <div class="loading">
+              <h2>Finding out...</h2>
+              <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="approved-container">
+        <div class="screen-container">
+          <div class="row">
+            <div class="approved">
+              <h1>You have been approved!</h1>
+              <div class="button-container">
+                <button type="submit" value="submit">Get Your Quote</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="javascripts/custom-script.js"></script>
+
+</body>
+</html>

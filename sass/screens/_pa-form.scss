@@ -1,0 +1,46 @@
+#pa-form-container {
+  @include outer-container-positioning;
+  .pa-form-header {
+    h3 {
+      margin-top: 1%;
+      margin-bottom: 4%;
+      text-align: center;
+      color: $mid-grey;
+    }
+  }
+  .pa-form {
+    margin: 0 auto;
+    width: 250px;
+    p {
+      margin-top: 17%;
+      margin-bottom: 7%;
+      color: $mid-grey;
+      font-size: 17px;
+      font-size: 1.7rem;
+    }
+    input {
+      @include form-placeholder;
+      border-bottom: 1px solid $green;
+      border-right: none;
+      border-left: none;
+      border-top: none;
+      width: 100%;
+      line-height: 1.5;
+      font-size: 17px;
+      font-size: 1.7rem;
+      &[type="text"]:focus {
+        outline: none;
+      }
+    }
+    button {
+      @include submit-button;
+      margin-top: 15%;
+      padding: 12px 0;
+      width: 160px;
+      background-color: $red;
+      &[disabled]{
+        background-color: $light-red;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@mixin outer-container-positioning {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin submit-button {
+  margin-bottom: 10%;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #FFF;
+  &[type="submit"]:focus{
+    outline: none;
+  }
+}
+
+@mixin form-placeholder {
+  ::-webkit-input-placeholder {
+    color: $light-grey;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $light-grey;  
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $light-grey;  
+  }
+  :-ms-input-placeholder {  
+    color: $light-grey;  
+  }
+}
